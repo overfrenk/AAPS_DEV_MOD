@@ -328,7 +328,7 @@ class AutosensDataStore {
             val mSecDiff = current.timestamp - previous.timestamp
             val adjusted = (mSecDiff - T.mins(5).msecs()) / 1000
             aapsLogger.debug(LTag.AUTOSENS, "Adjusting bucketed data time. Current: " + dateUtil.dateAndTimeAndSecondsString(current.timestamp) + " to: " + dateUtil.dateAndTimeAndSecondsString(previous.timestamp + T.mins(5).msecs()) + " by " + adjusted + " sec")
-            if (abs(adjusted) > 90) {
+            if (abs(adjusted) > 240) {
                 // too big adjustment, fallback to non 5 min data
                 aapsLogger.debug(LTag.AUTOSENS, "Fallback to non 5 min data")
                 createBucketedDataRecalculated(aapsLogger, dateUtil)

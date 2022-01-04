@@ -23,6 +23,6 @@ class GlimpPluginTest : TestBase() {
     }
 
     @Test fun advancedFilteringSupported() {
-        Assert.assertEquals(false, glimpPlugin.advancedFilteringSupported())
+        Assert.assertEquals(true, glimpPlugin.advancedFilteringSupported())
     }
 }

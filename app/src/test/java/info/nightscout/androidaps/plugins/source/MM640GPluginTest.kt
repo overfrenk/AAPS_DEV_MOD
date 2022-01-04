@@ -23,6 +23,6 @@ class MM640GPluginTest : TestBase() {
     }
 
     @Test fun advancedFilteringSupported() {
-        Assert.assertEquals(false, mM640gPlugin.advancedFilteringSupported())
+        Assert.assertEquals(true, mM640gPlugin.advancedFilteringSupported())
     }
 }

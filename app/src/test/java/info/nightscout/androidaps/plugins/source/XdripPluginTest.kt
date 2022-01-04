@@ -21,6 +21,6 @@ class XdripPluginTest : TestBase() {
     }
 
     @Test fun advancedFilteringSupported() {
-        Assert.assertEquals(false, xdripPlugin.advancedFilteringSupported())
+        Assert.assertEquals(true, xdripPlugin.advancedFilteringSupported())
     }
 }
