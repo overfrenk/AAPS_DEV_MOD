@@ -241,7 +241,7 @@ tasks.whenTaskAdded { task ->
     }
 }
 */
-
+//test
 printf('--------------\n')
 printf('isMaster: %s\n', isMaster().toString())
 printf('gitAvailable: %s\n', gitAvailable().toString())
