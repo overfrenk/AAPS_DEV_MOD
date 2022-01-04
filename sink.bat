@@ -1,1 +1,1 @@
-git add . && git commit -m "`date +\"%d-%m-%Y\"`" && git push overfrenk master
+git add . && git commit -m "Updated: %date%" && git push overfrenk master
